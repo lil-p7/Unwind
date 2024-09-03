@@ -1,0 +1,679 @@
+/* body styling */
+body {
+  background-color: #F8F8F8;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+/* navbar section */
+.navbar_logo {
+  color: #fff !important;
+  display: block !important;
+  line-height: 1.1 !important;
+  white-space: nowrap;
+  font-family: "Nunito", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.small_logo {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Nunito", Arial, sans-serif;
+}
+
+.first-cont {
+  background-image: url(img/background2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 700px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.first-cont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.first-cont > * {
+  position: relative;
+  z-index: 2;
+}
+
+.navlink a {
+  color: white;
+  opacity: 0.7;
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.active_link {
+  opacity: 1 !important;
+  font-weight: bold !important;
+}
+
+/* Disable hover effects on links */
+.navlink a:hover,
+.navlink a:focus,
+.navlink a:active {
+  color: white !important;
+  opacity: 0.7;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* hero text section */
+.hero-text {
+  color: white;
+  position: relative;
+  top: 35%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Adjusting hero text and icons alignment */
+.hero-text1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* Adds spacing between icons and text */
+}
+
+.nav_right {
+  font-size: 1rem; /* Adjusts the size of the icons */
+  vertical-align: middle;
+}
+
+.hero-text2 {
+  font-weight: 400;
+  color: #fff;
+  font-size: 70px;
+  line-height: 1.2;
+  font-family: "Old Standard TT", Arial, sans-serif;
+  text-align: center !important;
+}
+
+
+
+/* About Us section */
+.about_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  margin-top: 100px;
+}
+
+.card_row {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  min-height: 540px; /* Ensure the row has a minimum height */
+}
+
+.card1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+  border: none;
+  border-radius: 0;
+}
+
+.card-body {
+  padding: 20px;
+  flex: 1;
+}
+
+.card-body_1 {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-body_1:hover {
+  background-color: #222222;
+  color: white;
+}
+
+.card-body_2 {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.card-body_2:hover {
+  background-color: #222222;
+  color: white;
+}
+
+.card_img {
+  border-radius: 0;
+  max-height: 200px; /* Adjust image height to fit the card */
+  object-fit: cover; /* Ensure image covers the whole area */
+}
+
+.heading-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%; /* Ensure it matches the card height */
+  padding: 0 1rem;
+  margin-top: 80px;
+}
+
+.subheading {
+  font-size: 13px;
+  display: block;
+  margin-bottom: 5px;
+  color: #c5a880;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Nunito", sans-serif;
+}
+
+.abt_header {
+  font-size: 48px; /* Reduced font size for better fitting */
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Old Standard TT", Arial, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.card_text {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #999999 !important;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.book_room_btn{
+  background: #c5a880 !important;
+  border: 1px solid #c5a880 !important;
+  color: white;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 16px 24px;
+  border-radius: 0;
+}
+
+ 
+
+/* search best hotel section */
+.best_hotel_section {
+  background-image: url(/img/beautiful-embankment-walking-sport-amara-dolce-vita-luxury-hotel-alanya-turkey.jpg) !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: 100px;
+  height: 245px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  z-index: 1;
+}
+
+.best_hotel_section .overlay_child {
+  position: relative;
+  z-index: 2; /* Ensure content appears above the overlay */
+}
+
+.best_hotel_section_header {
+  color: #fff;
+  font-weight: 400;
+  font-family: "Old Standard TT", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 2.5rem;
+}
+
+.book_now_btn {
+  background: #c5a880 !important;
+  border: 1px solid #c5a880 !important;
+  color: #fff !important;
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Nunito", sans-serif;
+}
+
+
+
+/* take a tour section */
+.vid-section {
+  background-image: url(/img/pexels-quang-nguyen-vinh-222549-6130040.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+  margin-top: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.vid-section .tour_overlay_child {
+  position: relative;
+  z-index: 2; /* Ensure content appears above the overlay */
+}
+
+.tour_header {
+  color: #fff;
+  font-weight: 400;
+  font-size: 70px !important;
+  font-family: "Old Standard TT", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.video-icon {
+  background-color: #c5a880;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  transition: 0.3s all ease;
+  animation: pulse 2s infinite; /* Pulse effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play_icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  position: relative;
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(197, 168, 128, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 10px rgba(197, 168, 128, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(197, 168, 128, 0);
+  }
+}
+
+.video-icon:hover .play_icon {
+  transform: scale(1.2); /* Slightly enlarges the play icon on hover */
+}
+
+
+/* testimonial section */
+.testimony-section {
+  margin-top: 200px;
+}
+
+.main_header {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  font-family: "Old Standard TT", Arial, sans-serif;
+}
+
+.testimonial_card_cont {
+  margin-top: 50px;
+}
+
+.testimonial_card {
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial_header_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonial_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin-right: 15px;
+}
+
+.testimonial_img1 {
+  background-image: url(/img/testimony1\ \(1\).jpg);
+}
+
+.testimonial_img2 {
+  background-image: url(/img/testimony1\ \(2\).jpg);
+}
+
+.testimonial_img3 {
+  background-image: url(/img/testimony1\ \(3\).jpg);
+}
+
+.testimonial_header {
+  font-weight: 700;
+  font-size: 24px;
+  color: #222222;
+  font-family: "Nunito", Arial, sans-serif;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #c5a880;
+  font-weight: 600;
+  font-family: "Nunito", Arial, sans-serif;
+}
+
+.testimonial_card_text {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.6;
+  font-family: "Nunito", Arial, sans-serif;
+}
+
+.quotes{
+  position: relative;
+  top: 50px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #c5a880;
+}
+
+.quotes_img{
+  margin-left: 8px;
+}
+
+
+
+/* footer section */
+.footer {
+  background-color: #222222;
+  height: 489px;
+  margin-top: 50px;
+  padding-top: 100px;
+}
+
+/* General List Styling */
+.list-unstyled li a {
+  color: rgba(255, 255, 255, 0.7) !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  list-style: none;
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.list_header {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Nunito", Arial, sans-serif;
+  line-height: 1.5;
+  margin-left: 10px;
+}
+
+.footer_text {
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 55px;
+}
+
+/* Align Social Icons to the Left */
+.social-icons {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  padding-left: 0; /* Remove any default padding */
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.list_icon {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  border-radius: 2px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Adjust Padding and Alignment for Contact Section */
+.question_block ul li {
+  display: flex;
+  align-items: center; /* Ensure items are vertically aligned */
+  margin-bottom: 20px; /* Space between each contact info item */
+}
+
+.question_block ul li a {
+  text-decoration: none;
+}
+
+.question_block ul li span img {
+  margin-right: 15px; /* Space between icon and text */
+}
+
+.question_block ul li span.footer_text {
+  margin-top: 0; /* Ensure text aligns with icons vertically */
+}
+
+.icon_foot {
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+
+
+
+
+/* media queries */
+@media (max-width: 992px) {
+  .navbar {
+    background-color: black;
+  }
+  .counter_section{
+    padding-top: 70px;
+    padding-left: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text{
+    left: 50%;
+  }
+  .card1{
+    margin-top: 200px;
+  }
+  .card_1{
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of children */
+  }
+  .card-body_1{
+    margin-bottom: 0;
+  }
+  .abt_cont{
+    margin-top: 200px !important;
+  }
+  .card_height{
+    height: 478px !important;
+  }
+  .best_hotel_section_header{
+    font-size: calc(1.375rem + 1.5vw);
+  }
+  .icon_cont{
+    left: 150px;
+  }
+  .counter_section{
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 992px) {
+  .footer{
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .card_height{
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 1200px) {
+  .form_cont{
+    background-color: black;
+  }
+  .avail_cont{
+    height: 66px;
+  }
+}
+
+@media (max-width: 414px) {
+  .form_cont{
+    background-color: black;
+  }
+  .avail_cont{
+    padding-left: 90px;
+    height: 66px;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero-text{
+    left: 45%;
+  }
+  .blog_col{
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog_col{
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .avail_cont{
+    padding-left: 355px;
+  }
+}
+
+@media (max-width: 912px) {
+  .avail_cont{
+    padding-left: 255px;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-text{
+    left: 50%;
+  }
+  .avail_cont{
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .explore_row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 375px) {
+  .service_cont{
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  .blog_col{
+    width: 250px;
+    margin-left: 0;
+  }
+}
