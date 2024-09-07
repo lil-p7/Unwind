@@ -919,6 +919,8 @@ a.form-control.btn {
   align-items: center;
 }
 
+
+
 .list_header {
   color: #fff;
   margin-bottom: 40px;
@@ -1060,6 +1062,12 @@ a.form-control.btn {
   .avail_cont{
     padding-left: 90px;
     height: 66px;
+  }
+}
+
+@media (min-width: 628px) and (max-width: 766px) {
+  .about_section{
+    margin-top: 200px;
   }
 }
 
